@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+    }
+
+    body{
+        background-color:#cbe8f6;
+    }
+
+    /* Navigation Bar */
+    nav{
+        background-color:#003366;
+        padding:15px;
+        text-align:center;
+    }
+
+    nav a{
+        color:white;
+        text-decoration:none;
+        padding:14px 20px;
+        font-size:18px;
+        font-weight:bold;
+    }
+
+    nav a:hover{
+        background-color:#0055aa;
+        border-radius:5px;
+    }
+
+    h1{
+        text-align:center;
+        color:#003366;
+        margin:30px 0;
+        font-size:40px;
+    }
+
+    h2{
+        text-align:center;
+        color:#003366;
+        margin:30px 0 20px;
+    }
+
+    /* Gallery Layout */
+    .gallery{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:25px;
+        margin-bottom:40px;
+    }
+
+    figure{
+        background:rgb(255, 255, 255);
+        width:300px;
+        padding:15px;
+        border-radius:12px;
+        box-shadow:0 4px 10px rgba(0, 0, 0, 0.2);
+        text-align:center;
+        transition:0.3s;
+    }
+
+    figure:hover{
+        transform:translateY(-8px);
+    }
+
+    figure img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+        border-radius:10px;
+    }
+
+    figcaption{
+        margin-top:12px;
+        color:#0a0000;
+        font-size:15px;
+    }
+
+    hr{
+        border:1px solid #0c375b;
+        margin:20px;
+    }
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+</nav>
+
+<h1>Our Galleries</h1>
+
+<hr>
+
+<h2>Science</h2>
+<div class="gallery">
+
+    <figure>
+        <img src="assets/image.jpg" alt="Science">
+        <figcaption>A scientific experiment in progress.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="assets/image2.jpg" alt="Microscope">
+        <figcaption>A close-up of a microscope slide.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="assets/image5.jpg" alt="Solar System">
+        <figcaption>A model of the solar system.</figcaption>
+    </figure>
+
+</div>
+
+<hr>
+
+<h2>Sport</h2>
+<div class="gallery">
+
+    <figure>
+        <img src="assets/image3.jpg" alt="Sports Match">
+        <figcaption>Sport meet marathon moment.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="assets/image4.jpg" alt="Victory">
+        <figcaption>School big match .</figcaption>
+    </figure>
+
+    <figure>
+        <img src="assets/image6.jpg" alt="Training">
+        <figcaption>karate training at school .</figcaption>
+    </figure>
+
+</div>
+
+<hr>
+
+<h2>Annual Trip</h2>
+<div class="gallery">
+
+    <figure>
+        <img src="assets/image7.jpg" alt="Trip View">
+        <figcaption>A scenic view from the annual trip.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="assets/image8.jpg" alt="Group Photo">
+        <figcaption>Group photo during the annual trip.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="assets/image9.jpg" alt="Landmark">
+        <figcaption>A local landmark visited during the annual trip.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="assets/image10.jpg" alt="Memories">
+        <figcaption>A memorable moment from the annual trip.</figcaption>
+    </figure>
+
+</div>
+
+<hr>
+
+<h2>Annual Concert</h2>
+<div class="gallery">
+
+    <figure>
+        <img src="assets/image11.jpg" alt="Concert">
+        <figcaption>Performers on stage during the annual concert.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="assets/image12.jpg" alt="Audience">
+        <figcaption>Audience enjoying the annual concert.</figcaption>
+    </figure>
+
+</div>
+
+</body>
+</html>
